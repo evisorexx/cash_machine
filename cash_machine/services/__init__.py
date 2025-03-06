@@ -1,0 +1,1 @@
+from .receipt_service import render_receipt

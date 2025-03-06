@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cash_machine"
+version = "0.1.0"
+description = ""
+authors = ["Andrey M. <tolkoigri@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.115.11"
+uvicorn = "^0.34.0"
+jinja2 = "^3.1.5"
+pdfkit = "^1.0.0"
+qrcode = {extras = ["pil"], version = "^8.0"}
+wkhtmltopdf = "^0.2"
+python-dotenv = "^1.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

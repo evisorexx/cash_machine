@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Чек</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            width: 300px;
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        .header, .footer {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .details {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        .items {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        .items td {
+            padding: 5px;
+            border-bottom: 1px solid #000;
+        }
+        .total {
+            text-align: right;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .payment {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .barcode {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        ООО "КОМПАНИЯ К"<br>
+        Добро пожаловать
+    </div>
+    <div class="details">
+        ККМ 00075411    #3969<br>
+        ИНН 1087746942040<br>
+        ЭКПЗ 3851495566<br>
+        {{ created_at }} СИС.<br>
+        АДМИ
+    </div>
+    <table class="items">
+        {% for item in items %}
+        <tr>
+            <td>{{ item.title }}</td>
+            <td>{{ item.quantity }} шт. = {{ item.total }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <div class="total">
+        ИТОГ: {{ total }}
+    </div>
+    <div class="payment">
+        НАЛИЧНЫМИ<br>
+        = {{ total }}
+    </div>
+    <div class="footer">
+        ***********************<br>
+        00003751# 05970
+    </div>
+</body>
+</html>
