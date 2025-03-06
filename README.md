@@ -16,7 +16,7 @@
 Клонируйте репозиторий:
 
 ```
-git clone https://github.com/evisorex/cash_machine.git
+git clone https://github.com/evisorexx/cash_machine.git
 cd cash_machine
 ```
 ## Установите зависимости:
