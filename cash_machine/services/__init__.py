@@ -1,1 +1,2 @@
-from .receipt_service import render_receipt
+from .receipt_render import render_receipt
+from .receipt_info import generate_receipt_values
