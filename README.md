@@ -16,8 +16,8 @@
 Клонируйте репозиторий:
 
 ```
-git clone https://github.com/ваш-username/ваш-репозиторий.git
-cd ваш-репозиторий
+git clone https://github.com/evisorex/cash_machine.git
+cd cash_machine
 ```
 ## Установите зависимости:
 Если вы используете Poetry:
